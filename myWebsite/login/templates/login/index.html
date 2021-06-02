@@ -1,0 +1,13 @@
+{% extends "login/layout.html" %}
+
+
+{% block body %}
+
+<h1>USERNAMES: </h1>
+<ol>
+    {% for users in Usernames %}
+        <li>User: {{users.username}}</li>
+    {% endfor %}
+</ol>
+
+{% endblock %}
